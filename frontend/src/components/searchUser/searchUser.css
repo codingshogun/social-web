@@ -1,0 +1,50 @@
+.allUsersContainer {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--card-padding);
+}
+
+.allUsersContainer .searchContainer {
+  background-color: var(--color-light);
+  height: 45px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.allUsersContainer .searchContainer input {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+.allUsersContainer .searchContainer svg {
+  position: absolute;
+  left: 10px;
+}
+
+.allUsers {
+  padding: var(--card-padding);
+}
+
+.userCard {
+  width: 100%;
+  height: max-content;
+
+  margin: 1rem 0;
+  border-bottom: 1px solid var(--color-secondary);
+}
+.userCard img {
+  height: 60px;
+  width: 60px;
+  margin-right: 0.5rem;
+  border-radius: var(--border-radius);
+}
+.userCard a {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}

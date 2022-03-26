@@ -1,0 +1,25 @@
+nav {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 0.7rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .navCreate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 820px) {
+  .navCreate {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,135 @@
+.registerCenter {
+  width: 92vw;
+  max-width: 400px;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 1rem 0;
+  margin: 2vmax auto;
+}
+
+.registerCenter,
+.forUpdate {
+  position: relative;
+}
+
+.registerCenter h1 {
+  text-align: center;
+  padding: 0;
+  /* border-bottom: 1px solid var(--color-main); */
+  color: var(--color-primary);
+}
+
+.registerCenter form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .registerTxtField {
+  position: relative;
+  border-bottom: 2px solid var(--color-);
+  margin: 30px 0;
+}
+
+.registerTxtField input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.registerTxtField label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.registerTxtField span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-secondary);
+}
+
+.registerTxtField input:focus ~ label,
+.registerTxtField input:valid ~ label {
+  top: -5px;
+  color: var(--color-primary);
+}
+
+.registerPass {
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.registerRegisterSubmit {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-main);
+  border-radius: 5px;
+  font-size: 18px;
+  color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.registerSignupLink {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+.registerSignupLink a {
+  margin-left: 5px;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* .registerTxtField > input::file-selector-button {
+  cursor: pointer;
+
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+
+  transition: all 0.5s;
+
+  color: grey;
+  background-color: rgb(255, 255, 255);
+} */
+
+.registerFileField > input[type="file"] {
+  border-radius: 1rem;
+  margin: 1vmax auto;
+}
+.registerFileField {
+  display: flex;
+}
+.registerFileField > input[type="file"]::-webkit-file-upload-button {
+  background-color: var(--color-primary);
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.fileInputImage {
+  z-index: 3;
+  position: absolute;
+  top: -30%;
+  left: 85%;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,36 @@
+.settingsContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.settingsContainer a {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.settingsContainer a:hover {
+  background-color: var(--color-secondary);
+}
+.settingsContainer a svg {
+  margin-right: 1rem;
+}
+
+.deleteContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.deleteContainer div .deleteButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}

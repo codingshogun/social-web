@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-light: hsl(252, 30%, 95%);
+  --color-primary: hsl(252, 75%, 60%);
+  --color-secondary: hsl(252, 100%, 90%);
+  --color-dark: hsl(252, 30%, 17%);
+  --color-white: hsl(252, 30%, 100%);
+  --color-gray: hsl(252, 15%, 65%);
+
+  --border-radius: 2rem;
+  --card-border-radius: 1rem;
+  --btn-padding: 0.6rem 1rem;
+  --search-padding: 0.6rem 1rem;
+  --card-padding: 1rem;
+
+  --sticky-top-left: 5.4rem;
+  --stick-top-right: -18rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat";
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.profile-Picture {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: var(--btn-padding);
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 100ms ease;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.text-muted {
+  color: var(--color-gray);
+}
+
+/* body {
+  margin: 0;
+  background-color: var(--color-light);
+  font-family: "League Spartan", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+} */

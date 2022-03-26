@@ -1,0 +1,56 @@
+.otherUserContainer {
+  padding: 1vmax;
+  border-radius: var(--border-radius);
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.userInfo .top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfo .top .profile-Picture2 {
+  border-radius: 100%;
+  max-width: 170px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.top .followInfo {
+  display: flex;
+  flex-direction: column;
+}
+.top .followInfo .followInfoTiles {
+  display: flex;
+  align-items: center;
+}
+.top .followInfo .followInfoTiles .info {
+  display: flex;
+  flex-direction: column;
+  margin: 1vmax 1vmax;
+  text-align: center;
+}
+.top .followInfo .followBtn {
+  width: 100%;
+}
+.top .followInfo .followBtn .btn {
+  width: 100%;
+}
+
+.otherUserContainer .userInfo .userBio {
+  padding: var(--card-padding);
+}
+.otherUserContainer .userInfo .userBio p {
+  margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+  /* .userInfo .top {
+    flex-direction: column;
+  } */
+}
